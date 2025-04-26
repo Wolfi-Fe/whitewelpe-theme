@@ -4,7 +4,7 @@ Ein elegantes, modernes Discord-Theme von [Whitewelpe.de](https://whitewelpe.de)
 Erstellt von **Wölfi-Fe**.
 
 ## Installation
-1. Lade die `theme.css` Datei herunter.
+1. Lade die `whitewelpe.theme.css` Datei herunter.
 2. Importiere sie in BetterDiscord unter "Themes" und aktiviere sie.
 
 ## Vorschau
