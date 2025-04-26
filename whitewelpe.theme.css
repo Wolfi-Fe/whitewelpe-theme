@@ -180,3 +180,7 @@
   background-color: var(--background-tertiary);
   color: var(--accent-hover);
 }
+.input-2g-os5, .searchBar-3TnChZ {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
