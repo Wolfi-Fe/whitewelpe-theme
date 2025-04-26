@@ -13,7 +13,7 @@
 
 ## 🚀 Installation
 
-1. Lade die Datei [`theme.css`](theme.css) herunter.
+1. Lade die Datei [`whitewelpe.theme.css`](theme.css) herunter.
 2. Importiere sie in BetterDiscord unter "Themes" und aktiviere sie.
 
 ---
