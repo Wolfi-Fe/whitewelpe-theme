@@ -3,43 +3,75 @@
  * @author Wölfi-Fe
  * @version 1.0
  * @description Ein Theme von Whitewelpe.de
- * @source https://github.com/AssiWelpe/whitewelpe-theme
+ * @source https://whitewelpe.de
  */
 
 :root {
-  --background-primary: #0f0f1a;
-  --background-secondary: #191926;
-  --background-tertiary: #232338;
-  --text-normal: #e0e0e0;
-  --accent-color: #5fa8d3;
-  --interactive-normal: #5fa8d3;
-  --interactive-hover: #78c2f0;
-  --interactive-active: #9dd8ff;
-  --interactive-muted: #3a3a5a;
+  --background-primary: #0c0c12;       /* Fast schwarz, aber weich */
+  --background-secondary: #13131a;     /* Etwas heller für Panels */
+  --background-tertiary: #1a1a24;       /* Für leicht abgesetzte Elemente */
+  --text-normal: #e0e0e0;               /* Sehr helles Grau (fast weiß) */
+  --text-muted: #a0a0a0;                /* Für schwächere Texte */
+  --accent-color: #5fa8d3;              /* Dein Whitewelpe-Blau */
+  --accent-hover: #78c2f0;              /* Helleres Blau bei Hover */
+  --button-background: var(--accent-color);
+  --button-background-hover: var(--accent-hover);
+  --border-color: #2a2a3d;              /* Dezente Randfarbe */
 }
 
-/* Grundhintergrund */
+/* Allgemeiner Hintergrund */
 .theme-dark {
   background-color: var(--background-primary);
 }
 
-/* Sekundäre Bereiche */
-.container-1giJp5, .content-1jQy2l {
+/* Container (Channel-Liste, Freunde, Einstellungen) */
+.container-1giJp5, .content-1jQy2l, .sidebar-1tnWFu {
   background-color: var(--background-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+/* Nachrichtenbereich */
+.chatContent-3KubbW, .title-31SJ6t {
+  background-color: var(--background-primary);
 }
 
 /* Texte */
-.markup, .textContent-1nJkqC {
+.markup, .textContent-1nJkqC, .textArea-2CLwUE {
   color: var(--text-normal);
 }
 
-/* Buttons und Interaktionen */
-.button-38aScr, .lookFilled-1Gx00P {
-  background-color: var(--accent-color);
-  color: #fff;
+/* Schwächere Texte */
+.placeholder-1rCBhr, .subtext-2GlkbE {
+  color: var(--text-muted);
 }
 
-/* Hover-Effekte */
+/* Buttons */
+.button-38aScr, .lookFilled-1Gx00P {
+  background-color: var(--button-background);
+  color: #ffffff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
 .button-38aScr:hover, .lookFilled-1Gx00P:hover {
-  background-color: var(--interactive-hover);
+  background-color: var(--button-background-hover);
+}
+
+/* Server-Icons */
+.wrapper-3kah-n {
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-tertiary);
 }
