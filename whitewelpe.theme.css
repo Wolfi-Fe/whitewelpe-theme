@@ -1,0 +1,45 @@
+/**
+ * @name Whitewelpe Theme
+ * @author Wölfi-Fe
+ * @version 1.0
+ * @description Ein Theme von Whitewelpe.de
+ * @source https://github.com/AssiWelpe/whitewelpe-theme
+ */
+
+:root {
+  --background-primary: #0f0f1a;
+  --background-secondary: #191926;
+  --background-tertiary: #232338;
+  --text-normal: #e0e0e0;
+  --accent-color: #5fa8d3;
+  --interactive-normal: #5fa8d3;
+  --interactive-hover: #78c2f0;
+  --interactive-active: #9dd8ff;
+  --interactive-muted: #3a3a5a;
+}
+
+/* Grundhintergrund */
+.theme-dark {
+  background-color: var(--background-primary);
+}
+
+/* Sekundäre Bereiche */
+.container-1giJp5, .content-1jQy2l {
+  background-color: var(--background-secondary);
+}
+
+/* Texte */
+.markup, .textContent-1nJkqC {
+  color: var(--text-normal);
+}
+
+/* Buttons und Interaktionen */
+.button-38aScr, .lookFilled-1Gx00P {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Hover-Effekte */
+.button-38aScr:hover, .lookFilled-1Gx00P:hover {
+  background-color: var(--interactive-hover);
+}
