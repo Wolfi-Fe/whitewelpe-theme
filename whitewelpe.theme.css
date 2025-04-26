@@ -75,3 +75,73 @@
 ::-webkit-scrollbar-track {
   background: var(--background-tertiary);
 }
+
+/* Channel-Namen */
+.name-28HaxV {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Voice-Channel-Symbole */
+.icon-2W8DHg {
+  color: var(--accent-color);
+}
+
+/* User Popout Hintergrund */
+.userPopout-3XzG_A {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* Username im Popout */
+.username-1A8OIy {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Hovercard */
+.userPopoutOuter-3AVBmJ {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* Hauptbereich */
+.standardSidebarView-E9Pc3j {
+  background-color: var(--background-primary);
+}
+
+/* Seitenmenü links (Einstellungen) */
+.sidebarRegion-1VBisG {
+  background-color: var(--background-secondary);
+}
+
+/* Seitenmenü Punkte */
+.side-2ur1Qk .item-2GWPIy {
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+/* Seitenmenü Punkt aktiv */
+.side-2ur1Qk .item-2GWPIy[aria-selected="true"] {
+  color: var(--accent-color);
+  background-color: var(--background-tertiary);
+  border-radius: 8px;
+}
+
+/* Eingabefelder */
+.input-2g-os5, .searchBar-3TnChZ {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+/* Fokus-Effekt */
+.input-2g-os5:focus, .searchBar-3TnChZ:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
