@@ -145,3 +145,38 @@
   border-color: var(--accent-color);
   box-shadow: 0 0 5px var(--accent-color);
 }
+
+/* Buttons */
+.button-38aScr, .lookFilled-1Gx00P {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-38aScr:hover, .lookFilled-1Gx00P:hover {
+  transform: scale(1.05);
+}
+
+/* Channels */
+.name-28HaxV {
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.name-28HaxV:hover {
+  color: var(--accent-hover);
+  letter-spacing: 2px;
+}
+
+/* User Popout */
+.userPopout-3XzG_A, .userPopoutOuter-3AVBmJ {
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Settings Sidebar */
+.side-2ur1Qk .item-2GWPIy {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar Hover */
+.side-2ur1Qk .item-2GWPIy:hover {
+  background-color: var(--background-tertiary);
+  color: var(--accent-hover);
+}
