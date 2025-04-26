@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="300" alt="Whitewelpe Logo">
+  <img src="assets/Theme Logo.png" width="300" alt="Whitewelpe Logo">
 </p>
 
 # Whitewelpe Theme
