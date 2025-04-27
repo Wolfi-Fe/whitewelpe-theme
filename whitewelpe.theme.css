@@ -1,186 +1,61 @@
 /**
- * @name Whitewelpe Theme
- * @author Wölfi-Fe
- * @version 1.0
- * @description Ein Theme von Whitewelpe.de
- * @source https://whitewelpe.de
- */
+ * @name wolfi
+ * @author wolfi
+ * @version 1.0.5
+ * @description Allows you to use a background image without greatly altering the basic look of Discord.
+*/
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 
 :root {
-  --background-primary: #0c0c12;       /* Fast schwarz, aber weich */
-  --background-secondary: #13131a;     /* Etwas heller für Panels */
-  --background-tertiary: #1a1a24;       /* Für leicht abgesetzte Elemente */
-  --text-normal: #e0e0e0;               /* Sehr helles Grau (fast weiß) */
-  --text-muted: #a0a0a0;                /* Für schwächere Texte */
-  --accent-color: #5fa8d3;              /* Dein Whitewelpe-Blau */
-  --accent-hover: #78c2f0;              /* Helleres Blau bei Hover */
-  --button-background: var(--accent-color);
-  --button-background-hover: var(--accent-hover);
-  --border-color: #2a2a3d;              /* Dezente Randfarbe */
+  --background: url('https://i.imgur.com/7kHQR7q.png');
+  --backgroundsize: cover;
+  --backgroundposition: center;
+  --backgroundblur: 0px;
+  --popout: transparent;
+  --popoutsize: var(--backgroundsize);
+  --backgroundposition: center;
+  --popoutblur: 8px;
+  --transparencycolor:12, 12, 12;
+  --accentcolor: 12,12,12;
+  --backdrop: rgb(0,0,0,0.85);
+  --textshadow: rgb(0,0,0,0);
+  --transparencyalpha: 0;
+  --messagetransparency: 0.42;
+  --guildchanneltransparency: 1;
+  --chatinputtransparency: 0;
+  --memberlisttransparency: 1;
+  --font: Kalam;
+  --textbrightest: 255,255,255;
+  --textbrighter: 255,255,255;
+  --textbright: 255,255,255;
+  --textdark: 255,255,255;
+  --textdarker: 255,255,255;
+  --textdarkest: 255,255,255;
+  --settingsicons: 1;
+  --backdropsize: var(--background-size);
+  --backdropblur: 0px;
+  --version1_0_5: none;
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 1.5px;
+  --rs-large-width: 1.5px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #673AB7;
+  --rs-idle-color: #009688;
+  --rs-dnd-color: #2196F3;
+  --rs-offline-color: #FFFFFF;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
 }
 
-/* Allgemeiner Hintergrund */
-.theme-dark {
-  background-color: var(--background-primary);
-}
+/* Any custom CSS below here */
 
-/* Container (Channel-Liste, Freunde, Einstellungen) */
-.container-1giJp5, .content-1jQy2l, .sidebar-1tnWFu {
-  background-color: var(--background-secondary);
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-}
 
-/* Nachrichtenbereich */
-.chatContent-3KubbW, .title-31SJ6t {
-  background-color: var(--background-primary);
-}
-
-/* Texte */
-.markup, .textContent-1nJkqC, .textArea-2CLwUE {
-  color: var(--text-normal);
-}
-
-/* Schwächere Texte */
-.placeholder-1rCBhr, .subtext-2GlkbE {
-  color: var(--text-muted);
-}
-
-/* Buttons */
-.button-38aScr, .lookFilled-1Gx00P {
-  background-color: var(--button-background);
-  color: #ffffff;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.button-38aScr:hover, .lookFilled-1Gx00P:hover {
-  background-color: var(--button-background-hover);
-}
-
-/* Server-Icons */
-.wrapper-3kah-n {
-  border: 2px solid var(--accent-color);
-  border-radius: 15px;
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-track {
-  background: var(--background-tertiary);
-}
-
-/* Channel-Namen */
-.name-28HaxV {
-  color: var(--accent-color);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Voice-Channel-Symbole */
-.icon-2W8DHg {
-  color: var(--accent-color);
-}
-
-/* User Popout Hintergrund */
-.userPopout-3XzG_A {
-  background-color: var(--background-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-/* Username im Popout */
-.username-1A8OIy {
-  color: var(--accent-color);
-  font-weight: bold;
-}
-
-/* Hovercard */
-.userPopoutOuter-3AVBmJ {
-  background-color: var(--background-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-/* Hauptbereich */
-.standardSidebarView-E9Pc3j {
-  background-color: var(--background-primary);
-}
-
-/* Seitenmenü links (Einstellungen) */
-.sidebarRegion-1VBisG {
-  background-color: var(--background-secondary);
-}
-
-/* Seitenmenü Punkte */
-.side-2ur1Qk .item-2GWPIy {
-  color: var(--text-muted);
-  transition: color 0.3s;
-}
-
-/* Seitenmenü Punkt aktiv */
-.side-2ur1Qk .item-2GWPIy[aria-selected="true"] {
-  color: var(--accent-color);
-  background-color: var(--background-tertiary);
-  border-radius: 8px;
-}
-
-/* Eingabefelder */
-.input-2g-os5, .searchBar-3TnChZ {
-  background-color: var(--background-secondary);
-  color: var(--text-normal);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-}
-
-/* Fokus-Effekt */
-.input-2g-os5:focus, .searchBar-3TnChZ:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 5px var(--accent-color);
-}
-
-/* Buttons */
-.button-38aScr, .lookFilled-1Gx00P {
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button-38aScr:hover, .lookFilled-1Gx00P:hover {
-  transform: scale(1.05);
-}
-
-/* Channels */
-.name-28HaxV {
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
-}
-
-.name-28HaxV:hover {
-  color: var(--accent-hover);
-  letter-spacing: 2px;
-}
-
-/* User Popout */
-.userPopout-3XzG_A, .userPopoutOuter-3AVBmJ {
-  transition: background-color 0.4s ease, border-color 0.4s ease;
-}
-
-/* Settings Sidebar */
-.side-2ur1Qk .item-2GWPIy {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Sidebar Hover */
-.side-2ur1Qk .item-2GWPIy:hover {
-  background-color: var(--background-tertiary);
-  color: var(--accent-hover);
-}
-.input-2g-os5, .searchBar-3TnChZ {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
 
